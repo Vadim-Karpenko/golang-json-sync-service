@@ -95,6 +95,7 @@ go test
    Other connected users will receive the exact message you sent for an update. You'll need to use it to update the locally stored data in your application.
 
 3. **Retrieve Updated JSON (optional)**
+
     If it's too complicated in your case to update individual keys, you can just retrieve the whole thing by using:
     ```bash
     curl http://localhost:8080/json/{uuid}
