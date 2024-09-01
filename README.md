@@ -93,7 +93,7 @@ go test
     {"path": "character.age", "value": 51}
    ```
 
-   Other connected users will receive the exact message you sent for an update. You'll need to use it to update the locally stored data in your application.
+   Other connected users will receive the exact message you sent for an update. Use it to update the locally stored data in your application.
 
 3. **Retrieve Updated JSON (optional)**
 
