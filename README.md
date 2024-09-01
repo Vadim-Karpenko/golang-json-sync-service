@@ -34,7 +34,7 @@ This is a backend service written in Golang using Gin and WebSocket to keep JSON
    docker run -d -p 6379:6379 redis
     ```
 
-4. **Build and Run the Server**
+4. **Run the Server**
 
    Run the server using:
     ```bash
@@ -43,7 +43,7 @@ This is a backend service written in Golang using Gin and WebSocket to keep JSON
 
     The server will start on `http://localhost:8080`.
 
-5. **Build**
+5. **Build (Optional)**
 
     If you want to build the executable, use:
     ```bash
