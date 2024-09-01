@@ -66,7 +66,7 @@ Please note that the default timeout for the JSON data is 30 days after the last
 
 If you have a list of items, you can use the index to update the specific item. The path should be in the format of `character.items.1.name` to update the name of the second item in the list.
 
-### Retrieve JSON
+### Retrieve entire JSON
 
 - **Endpoint**: `GET /json/:uuid`
 - **Response**: JSON data
