@@ -65,7 +65,7 @@ Please note that the default timeout for the JSON data is 30 days after the last
 - **Message Body**: `{ "path": "path.to.value.that.changed", "value": "new value" }`
 - **Response**: `{ "path": "path.to.value.that.changed", "value": "new value" }`
 
-If you have a list of items, you can use the index to update the specific item. The path should be in the format of something like `character.items.1.name` to update the name of the second item in the list.
+If you have a list of items in your JSON, you can use the index to update the specific item. The path should be in the format of something like `character.items.1.name` to update the name of the second item in the list. Value could be of any type (list, dict, string, etc.).
 
 ### Retrieve entire JSON
 
