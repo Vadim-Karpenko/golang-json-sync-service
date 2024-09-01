@@ -62,9 +62,10 @@ Please note that the default timeout for the JSON data is 30 days after the last
 ### WebSocket Connection
 
 - **Endpoint**: `ws://localhost:8080/ws/:uuid` (use wss:// if in production!)
-- **Request Body**: `{ "path": "character.items.1.name", "value": "new value" }`
+- **Message Body**: `{ "path": "path.to.value.that.changed", "value": "new value" }`
+- **Response**: `{ "path": "path.to.value.that.changed", "value": "new value" }`
 
-If you have a list of items, you can use the index to update the specific item. The path should be in the format of `character.items.1.name` to update the name of the second item in the list.
+If you have a list of items, you can use the index to update the specific item. The path should be in the format of something like `character.items.1.name` to update the name of the second item in the list.
 
 ### Retrieve entire JSON
 
