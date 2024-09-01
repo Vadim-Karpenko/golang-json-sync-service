@@ -2,7 +2,7 @@
 
 
 
-This a backend service written in Golang using Gin and WebSocket to keep JSON data synchronized between clients. It utilizes Redis for persistence, ensuring quick response times. The service allows clients to upload JSON data, receive updates from other clients via WebSocket, and query the entire thing, ideal for applications that require real-time synchronization and data consistency across multiple clients.
+This is a backend service written in Golang using Gin and WebSocket to keep JSON data synchronized between clients. It uses Redis for persistence, ensuring quick response times. The service allows clients to upload JSON data, receive updates from other clients via WebSocket, and query the entire data. This is ideal for applications that require real-time synchronization and data consistency across multiple clients.
 
 
 ## Technologies Used
