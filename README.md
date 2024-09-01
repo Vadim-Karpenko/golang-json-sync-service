@@ -81,7 +81,7 @@ go test
 
 1. **Upload JSON Data**
     ```bash
-   curl -X POST http://localhost:8080/upload -d '{"character": {"name": "Frodo", "age": 50}}' -H "Content-Type: application/json"
+   curl -X POST http://localhost:8080/upload -d '{"character": {"name": "Frodo", "age": 50, "items": ["cloak", "ring"]}}' -H "Content-Type: application/json"
     ```
 
 2. **Connect via WebSocket**
@@ -92,15 +92,14 @@ go test
     {"path": "character.age", "value": 51}
    ```
 
-3. **Retrieve Updated JSON**
-    
-    Other connected users will receive the exact message you sent for an update. You'll need to use it to update the locally stored data in your application.
+   Other connected users will receive the exact message you sent for an update. You'll need to use it to update the locally stored data in your application.
 
-    If it's too complicated in your case, you can just retrieve the whole thing by using:
+3. **Retrieve Updated JSON (optional)**
+    If it's too complicated in your case to update individual keys, you can just retrieve the whole thing by using:
     ```bash
     curl http://localhost:8080/json/{uuid}
     ```
-    Also, if your user just got connected, it would be wise to use this API during the init phase.
+    Also, if your user just got connected, it would be a good idea to use this API during the init phase.
 
 ## Contributing
 
